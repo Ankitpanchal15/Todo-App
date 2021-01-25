@@ -1,1 +1,3 @@
-Todo App in React Js with Material UI 
+Todo App with React Js
+Used Material UI, React Hooks
+
