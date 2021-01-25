@@ -1,0 +1,2 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);body{font-family:"Roboto",sans-serif}.todo-app h2{font-weight:600}.todo-app{padding:50px;background-color:#67ffff;border-radius:10px}.todo-app .MuiList-root{margin-top:20px}.MuiList-root li{background:hsla(0,0%,100%,.7);margin-bottom:5px}button.delete:hover svg{fill:red}button.edit:hover svg{fill:green}.MuiList-root li.completed{text-decoration:line-through}
+/*# sourceMappingURL=main.8e800020.chunk.css.map */
