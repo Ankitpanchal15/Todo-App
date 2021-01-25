@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import ListItemText from './ListItemText';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemAction from './ListItemAction';
+import Grid from '@material-ui/core/Grid';
 
 const ListBlock = (props) => {
 
@@ -17,13 +18,16 @@ const ListBlock = (props) => {
     return(
         <>
               <ListItem className={ taskStatus == true ? 'completed' : null   }>
+                    
+            
                 <ListItemText
                 title={props.title}
                 text= {props.text}
-                pass={taskEvent}
-                />
-                <ListItemAction id={props.id} onDelete={props.onDelete} onEdit={props.onEdit}  />
-            
+                /> 
+              
+             
+                <ListItemAction id={props.id} onDelete={props.onDelete} onEdit={props.onEdit}  pass={taskEvent}  />
+               
                 </ListItem>
         </>
     )

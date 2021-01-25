@@ -1,9 +1,10 @@
 import React from 'react';
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
 import Tooltip from '@material-ui/core/Tooltip';
+import Switch from '@material-ui/core/Switch';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 const ListItemAction = (props) => {
 
@@ -16,7 +17,12 @@ const ListItemAction = (props) => {
 
     return(
         <>
-            <ListItemSecondaryAction>
+            <div className="action-grp">
+            <Tooltip title="Set Task Status">
+            <FormControlLabel style={{margin:'0'}} defaultChecked onChange={props.pass}   size="small" 
+            control={<Switch color="primary" />}
+            />
+            </Tooltip>
             <Tooltip title="Edit">
             <IconButton className="edit" onClick={itemEdit} edge="end" aria-label="Edit">
             <EditIcon />
@@ -27,7 +33,7 @@ const ListItemAction = (props) => {
             <DeleteIcon />
             </IconButton>
             </Tooltip>
-            </ListItemSecondaryAction> 
+            </div>
         </>
     )
 }
