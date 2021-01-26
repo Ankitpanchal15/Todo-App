@@ -1,11 +1,11 @@
-import React,{useState} from 'react';
+import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import List from '@material-ui/core/List';
 import ListBlock from './ListBlock';
 
 const TodoList = (props) => {
     
-const {input,setInput,item,setItem,edit,setEdit} = props.pass;
+const {setInput,item,setItem,setEdit} = props.pass;
 const DeleteItem = (id) => {
     const filter = () => {
     return item.filter((val,index)=> {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
@@ -76,8 +76,8 @@ const AddItem = ()=> {
           style = {{marginBottom:"20px"}}
         />
       <Tooltip title="Add">
-      <Button onClick={edit.status == false ? AddItem : UpdateItem } variant="contained" color="primary">
-       {edit.status == false ?  <AddCircleIcon size={5}/> : <DoneAllIcon/>   } 
+      <Button onClick={edit.status === false ? AddItem : UpdateItem } variant="contained" color="primary">
+       {edit.status === false ?  <AddCircleIcon size={5}/> : <DoneAllIcon/>   } 
         </Button>
         </Tooltip>
        

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './index.css';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import Input_Block from './Component/Input_Block';
+import InputBlock from './Component/InputBlock';
 import TodoList from './Component/TodoList';
 
 function App() {
@@ -39,7 +39,7 @@ function App() {
       Todo App
       </Typography>
 
-      <Input_Block pass={pass} />
+      <InputBlock pass={pass} />
       <TodoList  pass={pass}   /> 
       </div>
       </Container>
